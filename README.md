@@ -1,6 +1,6 @@
 # Daniel Chou REACT Pokedex using PokeDex-Promise-v2
 
-Taken starter code from Create React App Below
+Taken framework from Create React App Below
 
 To start the app locally, download the repository and navigate to the folder location in terminal.
 
