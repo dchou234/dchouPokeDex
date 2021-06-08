@@ -1,6 +1,12 @@
 # Daniel Chou REACT Pokedex using PokeDex-Promise-v2
 
-# Taken starter code from Create React App Below
+Taken framework from Create React App Below
+
+To start the app locally, download the repository and navigate to the folder location in terminal.
+
+Type npm install to install all of the dependencies.
+
+Type npm start to start the local server and it should open the app. Otherwise navigate to localhost:3000.
 
 # Getting Started with Create React App
 
