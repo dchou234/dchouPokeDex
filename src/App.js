@@ -43,6 +43,7 @@ const App = () => {
 
     })
      .catch (function(e) {
+       alert('Not a valid pokemon name. Remember to specify the form.')
       console.log(e);
     })
   };
@@ -54,14 +55,14 @@ const App = () => {
           <input className="input"
             type="text"
             onChange={handleChange}
-            placeholder="enter pokemon name"
+            placeholder="Enter name or ID"
           />
         </label>
       </form>
       {pokemonData.map((data) => {
         return (
           <div className="container">
-            <div className='tile'>
+            <div className={data.types[0].type.name}>
               <div className='tile-content'>
 
                 <div className="tilecard">
@@ -69,6 +70,7 @@ const App = () => {
                 </div>
 
                 <div className="tilecard">
+                  <div className='data'>Number: {" "} {data.id}</div>
                   <div className='data'>Type: {" "} {pokemonType}</div>
                   <div className="data">Height: {" "} {Math.round(data.height * 3.9)}" </div>
                   <div className="data">Weight: {" "} {Math.round(data.weight / 4.3)} lbs</div>
